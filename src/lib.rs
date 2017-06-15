@@ -7,8 +7,8 @@
 # ! [ feature ( optin_builtin_traits ) ]
 # ! [ no_std ]
 
-extern crate cortex_m ;
-extern crate vcell ;
+extern crate cortex_m;
+extern crate vcell;
 
 pub use cortex_m::peripheral::Cpuid as CPUID;
 pub use cortex_m::peripheral::CPUID;
@@ -48,9 +48,9 @@ pub mod iwdg;
 pub mod wwdg;
 pub mod tim1;
 pub mod tim2;
+pub mod tim6;
 pub mod tim9;
 pub mod tim10;
-pub mod tim6;
 pub mod i2c1;
 pub mod spi1;
 pub mod usart1;
@@ -65,3 +65,33 @@ pub mod crc;
 pub mod flash;
 pub mod usb;
 
+pub use fsmc::FSMC;
+pub use pwr::PWR;
+pub use rcc::RCC;
+pub use gpioa::{GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOF, GPIOG};
+pub use afio::AFIO;
+pub use exti::EXTI;
+pub use dma1::{DMA1, DMA2};
+pub use sdio::SDIO;
+pub use rtc::RTC;
+pub use bkp::BKP;
+pub use iwdg::IWDG;
+pub use wwdg::WWDG;
+pub use tim1::{TIM1, TIM8};
+pub use tim2::{TIM2, TIM3, TIM4, TIM5};
+pub use tim6::{TIM6, TIM7};
+pub use tim9::{TIM9, TIM12};
+pub use tim10::{TIM10, TIM11, TIM13, TIM14};
+pub use i2c1::{I2C1, I2C2};
+pub use spi1::{SPI1, SPI2, SPI3};
+pub use usart1::{USART1, USART2, USART3};
+pub use adc1::ADC1;
+pub use adc2::{ADC2, ADC3};
+pub use can::CAN;
+pub use dac::DAC;
+pub use dbg::DBG;
+pub use uart4::UART4;
+pub use uart5::UART5;
+pub use crc::CRC;
+pub use flash::FLASH;
+pub use usb::USB;
